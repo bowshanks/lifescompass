@@ -1,0 +1,76 @@
+.home-action-banner-overlay {
+  width: 100%;
+  height: calc(100vh - 100px);
+  z-index: 1;
+  background-color: rgba(89, 24, 23, .1);
+  position: absolute;
+}
+.home-action-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: url("../forest-light.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-action-banner-logo {
+  color: rgba(255, 253, 246, 1);
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 200;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  z-index: 2;
+}
+.home-action-banner-action {
+  color: rgba(255, 253, 246, 1);
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+  border: 2px;
+  border-style: solid;
+  border-color: rgba(255, 253, 246, 1);
+  padding: .7rem;
+  background-color: rgba(124, 34, 32, 1);
+  z-index: 2;
+  cursor: pointer;
+}
+.home-action-banner-action:hover {
+  background-color: rgba(89, 24, 23, .7);
+}
+.home-coaching-info-title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: rgba(60, 145, 230, 1);
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+.home-coaching-info-types {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.home-coaching-info-box {
+  width: 50%;
+  padding: 1rem;
+}
+.home-coaching-info-box-title {
+  font-family: 'Cormorant', serif;
+  color: rgba(89, 24, 23, 1);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+.home-coaching-info {
+  font-family: 'Cormorant', serif;
+  color: rgba(89, 24, 23, 1);
+  font-size: 1rem;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+.home-coaching-info li {
+  padding-bottom: .2rem;
+  list-style: disc;
+}
