@@ -8,8 +8,8 @@ const plumber = require('gulp-plumber');
 
 let paths = {
   allScss: './styles/*.scss',
-  scssSource : './public/src/css/primary.scss',
-  scssDest : './public/build'
+  scssSource : './styles/primary.scss',
+  scssDest : './buildcss'
   // jsSource: './public/src/js/**/*.js',
   // jsDest: './public/build'
 }

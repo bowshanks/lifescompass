@@ -17,7 +17,7 @@
   align-items: center;
 }
 .home-action-banner-logo {
-  color: rgba(255, 253, 246, 1);
+  color: $white-text;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 200;
   font-size: 4rem;
@@ -25,13 +25,13 @@
   z-index: 2;
 }
 .home-action-banner-action {
-  color: rgba(255, 253, 246, 1);
+  color: $white-text;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 200;
   font-size: 2rem;
   border: 2px;
   border-style: solid;
-  border-color: rgba(255, 253, 246, 1);
+  border-color: $white-text;
   padding: .7rem;
   background-color: rgba(124, 34, 32, 1);
   z-index: 2;
@@ -58,14 +58,14 @@
 }
 .home-coaching-info-box-title {
   font-family: 'Cormorant', serif;
-  color: rgba(89, 24, 23, 1);
+  color: $primary-color;
   font-size: 1.5rem;
   text-align: center;
   padding: 1rem;
 }
 .home-coaching-info {
   font-family: 'Cormorant', serif;
-  color: rgba(89, 24, 23, 1);
+  color: $primary-color;
   font-size: 1rem;
   padding: 1rem;
   padding-left: 2rem;

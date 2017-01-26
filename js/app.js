@@ -10,9 +10,9 @@ lifescompass.config(function($stateProvider,$urlRouterProvider,$httpProvider){
       templateUrl: './views/home.html',
       controller: 'homeCtrl'
     })
-    // .state('admin',{
-    //   url: '/admin',
-    //   templateUrl: './views/admin.html',
-    //   controller: 'adminCtrl'
-    // })
+    .state('benefits',{
+      url: '/benefits',
+      templateUrl: './views/benefits.html',
+      controller: 'benefitsCtrl'
+    })
 });
