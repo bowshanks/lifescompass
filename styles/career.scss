@@ -1,0 +1,38 @@
+.career-title {
+  width: 100%;
+  font-family: 'Cormorant', serif;
+  font-size: 2rem;
+  color: $primary-color;
+  text-align: center;
+  background: $white-text;
+  padding: 1.5rem;
+}
+
+.career-about-title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: $secondary-color;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.career-section {
+  background: $white-text;
+}
+
+.career-about-info {
+  padding: 1.5rem;
+}
+
+.career-about-list-title {
+  color: $primary-color;
+  font-size: 1.2rem;
+}
+
+.career-about-info ul {
+  padding-left: 2rem;
+}
+
+.career-about-info li {
+  padding-bottom: .2rem;
+  list-style: disc;
+}

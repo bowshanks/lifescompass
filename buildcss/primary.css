@@ -290,3 +290,35 @@ footer {
 .coaching-info li {
   padding-bottom: .2rem;
   list-style: disc; }
+
+.career-title {
+  width: 100%;
+  font-family: 'Cormorant', serif;
+  font-size: 2rem;
+  color: #591817;
+  text-align: center;
+  background: #fffdf6;
+  padding: 1.5rem; }
+
+.career-about-title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: #3c91e6;
+  font-size: 2rem;
+  padding-bottom: 1rem; }
+
+.career-section {
+  background: #fffdf6; }
+
+.career-about-info {
+  padding: 1.5rem; }
+
+.career-about-list-title {
+  color: #591817;
+  font-size: 1.2rem; }
+
+.career-about-info ul {
+  padding-left: 2rem; }
+
+.career-about-info li {
+  padding-bottom: .2rem;
+  list-style: disc; }
