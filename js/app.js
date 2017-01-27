@@ -15,4 +15,29 @@ lifescompass.config(function($stateProvider,$urlRouterProvider,$httpProvider){
       templateUrl: './views/benefits.html',
       controller: 'benefitsCtrl'
     })
+    .state('career',{
+      url: '/career',
+      templateUrl: './views/career.html',
+      controller: 'careerCtrl'
+    })
+    .state('divorce',{
+      url: '/divorce',
+      templateUrl: './views/divorce.html',
+      controller: 'divorceCtrl'
+    })
+    .state('equestrian',{
+      url: '/equestrian',
+      templateUrl: './views/equestrian.html',
+      controller: 'equestrianCtrl'
+    })
+    .state('life',{
+      url: '/life',
+      templateUrl: './views/life.html',
+      controller: 'lifeCtrl'
+    })
+    .state('resources',{
+      url: '/resources',
+      templateUrl: './views/resources.html',
+      controller: 'resourcesCtrl'
+    })
 });

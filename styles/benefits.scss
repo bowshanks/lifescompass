@@ -1,4 +1,61 @@
-.coaching-who-info ul li {
+.benefits-container {
+  display: flex;
+  flex-direction: row;
+  background: url("../writing.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-size: cover;
+}
+
+.benefits-left {
+  width: 300px;
+  background: $secondary-color;
+  border: 3px solid $white-text;
+}
+
+.benefits-right {
+
+}
+
+.benefits-title {
+  width: 100%;
+  margin-bottom: 200px;
+  font-family: 'Cormorant', serif;
+  font-size: 2rem;
+  color: $primary-color;
+  text-align: center;
+  background: $white-text;
+  padding: 1.5rem;
+}
+
+.coaching-benefits-section {
+  background: $white-text;
+  padding: 1rem;
+}
+
+.coaching-what {
+  margin-bottom: 200px;
+}
+
+.coaching-title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: $secondary-color;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.coaching-info {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.coaching-info div {
+  color: $primary-color;
+  font-size: 1.2rem;
+}
+.coaching-info ul {
+  padding-left: 2rem;
+}
+
+.coaching-info li {
   padding-bottom: .2rem;
   list-style: disc;
 }
