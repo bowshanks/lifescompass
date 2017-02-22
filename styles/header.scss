@@ -2,20 +2,34 @@ header {
   width: 100%;
   height: 100px;
   background: $primary-color;
-  // border-radius: 0 0 0 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1rem;
+  padding: .2rem;
+  padding-left: 1rem;
+}
+.header-logo {
+  background: $white-text;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 3px solid red;
+}
+.header-logo img {
+  display: block;
+  max-height: 100%;
+  margin: auto;
 }
 .header-align {
-  width: 100%;
+  width: calc(100% - 100px);
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  padding: 1rem;
 }
 .header-title-container {
-  color: $white-text;
+  color: $secondary-color;
   font-size: 1.5rem;
   font-family: 'Cormorant', serif;
   font-weight: 300;
@@ -46,7 +60,7 @@ header {
     font-family: 'Cormorant', serif;
     font-weight: 300;
     font-size: 1.3rem;
-    color: $white-text;
+    color: $secondary-color;
     padding: .5em;
     cursor: pointer;
   }
@@ -64,15 +78,15 @@ header {
     position: absolute;
     background-color: $white-text;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 2;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    z-index: 3;
   }
 
   /* Links inside the dropdown */
   .desktop-menu-dropdown-content a {
     font-family: 'Cormorant', serif;
     font-size: 1rem;
-    color: $primary-color;
+    color: $secondary-color;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -80,8 +94,8 @@ header {
 
 /* Change color of dropdown links on hover */
   .desktop-menu-dropdown-content a:hover {
-    background-color: rgba(255, 254, 251, 1);
-    color: black;
+    /* background-color: rgba(255, 254, 251, 1); */
+    color: $primary-color;
   }
 
 /* Show the dropdown menu on hover */
@@ -92,13 +106,14 @@ header {
 
 
   .desktop-menu-contact {
-    background: rgba(124, 34, 32, 1);
+    background: rgb(255,0,0);
     border: 1px;
     border-style: solid;
     border-color: $white-text;
+    color: $white-text;
   }
   .desktop-menu-contact:hover {
-    background: rgba(159, 43, 41, 1);
+    background: $secondary-color;
   }
 
 }
