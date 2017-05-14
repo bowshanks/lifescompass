@@ -1,20 +1,14 @@
-.curve {
-  z-index: 2;
-}
-.curve svg {
-  fill: $primary-color;
-  stroke: $primary-color;
-}
+
 .home-action-banner-overlay {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
   z-index: 1;
   background-color: rgba(92, 211, 251, .1);
   position: absolute;
 }
 .home-action-banner {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
   background: url("../forest-light.jpg") no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
@@ -40,16 +34,16 @@
   border-style: solid;
   border-color: $white-text;
   padding: .7rem;
-  background-color: rgb(255,0,0);
+  background-color: rgba($red-color,.8);
   z-index: 2;
   cursor: pointer;
 }
 .home-action-banner-action:hover {
-  background-color: rgba(255,0,0, .7);
+  background-color: rgba($red-color, 1);
 }
 .home-coaching-info-title {
   font-family: 'Fira Sans Condensed', sans-serif;
-  color: rgb(255,0,0);
+  color: rgba($red-color, 1);
   font-size: 2rem;
   text-align: center;
   padding: 2rem;
@@ -69,6 +63,21 @@
   font-size: 1.5rem;
   text-align: center;
   padding: 1rem;
+}
+.home-coaching-info-image {
+  height: 45vh;
+}
+#career-coaching-img {
+  background-image: url("../workspace.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#life-coaching-img {
+  background-image: url("../manandvista.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .home-coaching-info {
   font-family: 'Cormorant', serif;

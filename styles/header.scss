@@ -1,19 +1,23 @@
 header {
   width: 100%;
+  position: fixed;
+  z-index: 3;
+}
+
+.header-top {
   height: 100px;
-  background: $primary-color;
+  padding: 0 1rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: .2rem;
-  padding-left: 1rem;
 }
+
 .header-logo {
-  background: $white-text;
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
-  border: 3px solid red;
+  height: 140px;
+  width: auto;
+  position: relative;
+  top: 10px;
 }
 .header-logo img {
   display: block;
@@ -21,22 +25,12 @@ header {
   margin: auto;
 }
 .header-align {
-  width: calc(100% - 100px);
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1rem;
-}
-.header-title-container {
-  color: $secondary-color;
-  font-size: 1.5rem;
-  font-family: 'Cormorant', serif;
-  font-weight: 300;
-  letter-spacing: .3rem;
-}
-.header-title-container span {
-  font-size: 2.2rem;
 }
 .header-desktop-menu {
   display: none;
@@ -45,75 +39,78 @@ header {
   display: block;
 }
 
+.desktop-menu-contact {
+  display: none;
+}
+
 @media (min-width: 769px) {
   .header-mobile-menu{
+    height: 32px;
     display: none;
   }
+
   .header-desktop-menu {
-    width: 25%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    width: 100%;
+    display: block;
+    background-color: $secondary-color;
   }
-  .desktop-menu-item {
-    font-family: 'Cormorant', serif;
-    font-weight: 300;
-    font-size: 1.3rem;
-    color: $secondary-color;
+
+  .header-destop-link-holder {
+    width: 80%;
+    margin: auto;
+    z-index: 2;
+  }
+
+  .header-desktop-menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .header-desktop-menu ul li {
+    position: relative;
+    float: left;
     padding: .5em;
     cursor: pointer;
-  }
-  .desktop-menu-dropdown {
-    margin-right: 1.5rem;
-    position: relative;
-  }
-
-  .desktop-menu-dropbtn {
-    border: none;
-  }
-  /* Dropdown Content (Hidden by Default) */
-  .desktop-menu-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: $white-text;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-    z-index: 3;
-  }
-
-  /* Links inside the dropdown */
-  .desktop-menu-dropdown-content a {
-    font-family: 'Cormorant', serif;
+    font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 1rem;
-    color: $secondary-color;
-    padding: 12px 16px;
+    font-weight: 100;
+  }
+
+  .header-desktop-menu ul a {
+    color: $white-text;
     text-decoration: none;
     display: block;
   }
 
-/* Change color of dropdown links on hover */
-  .desktop-menu-dropdown-content a:hover {
-    /* background-color: rgba(255, 254, 251, 1); */
-    color: $primary-color;
+  .header-desktop-menu ul li:hover {
+    top: 1px;
+    left: 1px;
   }
 
-/* Show the dropdown menu on hover */
-  .desktop-menu-dropdown:hover .desktop-menu-dropdown-content {
-    display: block;
-    right: 0;
+  .header-desktop-menu ul a:hover {
+    color: white;
   }
-
 
   .desktop-menu-contact {
-    background: rgb(255,0,0);
+    display: block;
+    background: $secondary-color;
     border: 1px;
     border-style: solid;
     border-color: $white-text;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
     color: $white-text;
+    letter-spacing: .1rem;
+    padding: .7rem;
   }
   .desktop-menu-contact:hover {
-    background: $secondary-color;
+    background: rgba($red-color, 1);
   }
 
 }
