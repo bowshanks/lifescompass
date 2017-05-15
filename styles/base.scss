@@ -7,15 +7,16 @@ LEGHT GREY RGB: 211, 212, 217
 */
 @import url('https://fonts.googleapis.com/css?family=Cormorant:300,400');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,200,300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
 
 $primary-color: rgb(180,235,253);
 $secondary-color: rgb(2,29,63);
 $red-color: rgb(247, 44, 71);
 $white-text: rgb(255,253,246);
 
-.main-container {
-  position: relative;
-}
+$sans-serif-font: 'Fira Sans Condensed', sans-serif;
+$serif-font: 'Cormorant', serif;
+$quote-font: 'Homemade Apple', cursive;
 
 img {
     max-width: 100%;

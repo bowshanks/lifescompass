@@ -4,6 +4,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Cormorant:300,400");
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,200,300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Homemade+Apple");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,9 +57,6 @@ JET RGB: 54, 53, 55
 BABY POWDER RGB: 255, 253, 246
 LEGHT GREY RGB: 211, 212, 217
 */
-.main-container {
-  position: relative; }
-
 img {
   max-width: 100%;
   max-height: 100%; }
@@ -202,7 +200,7 @@ footer {
 
 .home-action-banner-logo {
   color: #fffdf6;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 200;
   font-size: 4rem;
   margin-bottom: 2rem;
@@ -210,7 +208,7 @@ footer {
 
 .home-action-banner-action {
   color: #fffdf6;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 200;
   font-size: 2rem;
   border: 2px;
@@ -225,7 +223,7 @@ footer {
   background-color: #f72c47; }
 
 .home-coaching-info-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   color: #f72c47;
   font-size: 2rem;
   text-align: center;
@@ -241,7 +239,7 @@ footer {
   padding: 1rem; }
 
 .home-coaching-info-box-title {
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   color: #021d3f;
   font-size: 1.5rem;
   text-align: center;
@@ -263,7 +261,7 @@ footer {
   background-size: cover; }
 
 .home-coaching-info {
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   color: #021d3f;
   font-size: 1rem;
   padding: 1rem;
@@ -273,52 +271,66 @@ footer {
   padding-bottom: .2rem;
   list-style: disc; }
 
+@media (max-width: 768px) {
+  .home-action-banner-logo {
+    font-size: 3rem;
+    text-align: center; }
+  .home-coaching-info-types {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .home-coaching-info-box {
+    width: 80%; }
+  #life-coaching-img {
+    background-position: center bottom;
+    height: 70vh; } }
+
 .benefits-container {
-  display: flex;
-  flex-direction: row;
-  background: url("../writing.jpg") no-repeat center center fixed;
+  top: 132px;
+  display: block; }
+
+.benefits-top {
+  width: 100%;
+  background: url("../jasper-van-der-meij-97274.jpg") no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
   position: relative;
-  height: calc(100vh - 132px);
-  top: 132px; }
+  height: calc(100vh - 132px); }
+
+.benefits-bottom {
+  display: flex;
+  flex-direction: row;
+  padding: 20px; }
 
 .benefits-left {
-  width: 100px;
-  background: #021d3f;
-  border: 3px solid #fffdf6;
-  height: 100vh;
-  position: fixed; }
+  width: calc(100% - 300px); }
 
 .benefits-title {
   width: 100%;
-  margin-bottom: 200px;
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   font-size: 2rem;
-  color: #b4ebfd;
+  color: #f72c47;
   text-align: center;
-  background: #fffdf6;
   padding: 1.5rem; }
 
 .coaching-benefits-section {
-  background: #fffdf6;
-  padding: 1rem; }
-
-.coaching-what {
-  margin-bottom: 200px; }
+  padding: 1rem;
+  font-family: "Cormorant", serif; }
 
 .coaching-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   color: #021d3f;
   font-size: 2rem;
   padding-bottom: 1rem; }
 
 .coaching-info {
   padding-left: 1rem;
-  padding-right: 1rem; }
+  padding-right: 1rem;
+  font-family: "Cormorant", serif; }
 
 .coaching-info div {
-  color: #b4ebfd;
+  color: #f72c47;
   font-size: 1.2rem; }
 
 .coaching-info ul {
@@ -328,34 +340,84 @@ footer {
   padding-bottom: .2rem;
   list-style: disc; }
 
+.benefits-right {
+  width: 300px;
+  border-left: 1px solid #021d3f;
+  padding: 10px;
+  position: relative; }
+
+@media (max-width: 768px) {
+  .benefits-right {
+    display: none; }
+  .benefits-left {
+    width: 100%; } }
+
+.career-container {
+  top: 132px;
+  display: block; }
+
+.career-top {
+  width: 100%;
+  background: url("../christoph-schulz-4743.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - 132px); }
+
+.career-bottom {
+  display: flex;
+  flex-direction: row;
+  padding: 20px; }
+
+.career-left {
+  width: calc(100% - 300px); }
+
 .career-title {
   width: 100%;
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   font-size: 2rem;
-  color: #b4ebfd;
+  color: #f72c47;
   text-align: center;
-  background: #fffdf6;
   padding: 1.5rem; }
-
-.career-about-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  color: #021d3f;
-  font-size: 2rem;
-  padding-bottom: 1rem; }
 
 .career-section {
-  background: #fffdf6; }
+  padding: 1rem;
+  font-family: "Cormorant", serif; }
 
-.career-about-info {
-  padding: 1.5rem; }
+.career-right {
+  width: 300px;
+  border-left: 1px solid #021d3f;
+  padding: 10px;
+  position: relative; }
 
-.career-about-list-title {
-  color: #b4ebfd;
-  font-size: 1.2rem; }
+@media (max-width: 768px) {
+  .career-right {
+    display: none; }
+  .career-left {
+    width: 100%; } }
 
-.career-about-info ul {
-  padding-left: 2rem; }
+.quote {
+  position: absolute;
+  top: 10%; }
 
-.career-about-info li {
-  padding-bottom: .2rem;
-  list-style: disc; }
+.quote-mark {
+  font-size: 50px; }
+
+.start-quote {
+  position: absolute; }
+
+.end-quote {
+  position: absolute;
+  right: 10px; }
+
+.quote-quote {
+  padding: 0 30px;
+  position: relative;
+  top: 15px;
+  line-height: 1.5;
+  font-family: "Homemade Apple", cursive; }
+
+.quote-source {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Cormorant", serif; }

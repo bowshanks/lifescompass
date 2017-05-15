@@ -1,48 +1,46 @@
 .benefits-container {
-  display: flex;
-  flex-direction: row;
-  background: url("../writing.jpg") no-repeat center center fixed;
+  top: 132px;
+  display: block;
+}
+
+.benefits-top {
+  width: 100%;
+  background: url("../jasper-van-der-meij-97274.jpg") no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
   position: relative;
   height: calc(100vh - 132px);
-  top: 132px;
+}
+
+.benefits-bottom {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
 }
 
 .benefits-left {
-  width: 100px;
-  background: $secondary-color;
-  border: 3px solid $white-text;
-  height: 100vh;
-  position: fixed;
-}
-
-.benefits-right {
-
+  width: calc(100% - 300px);
 }
 
 .benefits-title {
   width: 100%;
-  margin-bottom: 200px;
-  font-family: 'Cormorant', serif;
+  font-family: $serif-font;
   font-size: 2rem;
-  color: $primary-color;
+  color: $red-color;
   text-align: center;
-  background: $white-text;
   padding: 1.5rem;
 }
 
 .coaching-benefits-section {
-  background: $white-text;
   padding: 1rem;
+  font-family: $serif-font;
 }
 
 .coaching-what {
-  margin-bottom: 200px;
 }
 
 .coaching-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: $sans-serif-font;
   color: $secondary-color;
   font-size: 2rem;
   padding-bottom: 1rem;
@@ -51,9 +49,10 @@
 .coaching-info {
   padding-left: 1rem;
   padding-right: 1rem;
+  font-family: $serif-font;
 }
 .coaching-info div {
-  color: $primary-color;
+  color: $red-color;
   font-size: 1.2rem;
 }
 .coaching-info ul {
@@ -63,4 +62,20 @@
 .coaching-info li {
   padding-bottom: .2rem;
   list-style: disc;
+}
+
+.benefits-right {
+  width: 300px;
+  border-left: 1px solid $secondary-color;
+  padding: 10px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .benefits-right {
+    display: none;
+  }
+  .benefits-left {
+    width: 100%;
+  }
 }
