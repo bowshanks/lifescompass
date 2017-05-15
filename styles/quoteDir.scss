@@ -1,0 +1,31 @@
+.quote {
+  position: absolute;
+  top: 10%;
+}
+
+.quote-mark {
+  font-size: 50px;
+}
+
+.start-quote {
+  position: absolute;
+}
+
+.end-quote {
+  position: absolute;
+  right: 10px;
+}
+
+.quote-quote {
+  padding: 0 30px;
+  position: relative;
+  top: 15px;
+  line-height: 1.5;
+  font-family: $quote-font;
+}
+
+.quote-source {
+  text-align: center;
+  margin-top: 30px;
+  font-family: $serif-font;
+}

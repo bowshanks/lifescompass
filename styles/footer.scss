@@ -1,7 +1,7 @@
 footer {
   width: 100%;
-  height: 65px;
-  background: $primary-color;
+  height: 45px;
+  background: $secondary-color;
   /*border-radius: 0 0 0 50em;*/
   display: flex;
   flex-direction: row;
@@ -12,4 +12,13 @@ footer {
   width: 100%;
   text-align: center;
   color: $white-text;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.bullet-spacer {
+  display: inline-block;
+  width: 1.5rem;
+  font-weight: 500;
 }

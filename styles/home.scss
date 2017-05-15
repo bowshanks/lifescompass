@@ -1,13 +1,14 @@
+
 .home-action-banner-overlay {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
   z-index: 1;
-  background-color: rgba(89, 24, 23, .1);
+  background-color: rgba(92, 211, 251, .1);
   position: absolute;
 }
 .home-action-banner {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
   background: url("../forest-light.jpg") no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
@@ -18,7 +19,7 @@
 }
 .home-action-banner-logo {
   color: $white-text;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: $sans-serif-font;
   font-weight: 200;
   font-size: 4rem;
   margin-bottom: 2rem;
@@ -26,23 +27,23 @@
 }
 .home-action-banner-action {
   color: $white-text;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: $sans-serif-font;
   font-weight: 200;
   font-size: 2rem;
   border: 2px;
   border-style: solid;
   border-color: $white-text;
   padding: .7rem;
-  background-color: rgba(124, 34, 32, 1);
+  background-color: rgba($red-color,.8);
   z-index: 2;
   cursor: pointer;
 }
 .home-action-banner-action:hover {
-  background-color: rgba(89, 24, 23, .7);
+  background-color: rgba($red-color, 1);
 }
 .home-coaching-info-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  color: $secondary-color;
+  font-family: $sans-serif-font;
+  color: rgba($red-color, 1);
   font-size: 2rem;
   text-align: center;
   padding: 2rem;
@@ -57,15 +58,30 @@
   padding: 1rem;
 }
 .home-coaching-info-box-title {
-  font-family: 'Cormorant', serif;
-  color: $primary-color;
+  font-family: $serif-font;
+  color: $secondary-color;
   font-size: 1.5rem;
   text-align: center;
   padding: 1rem;
 }
+.home-coaching-info-image {
+  height: 45vh;
+}
+#career-coaching-img {
+  background-image: url("../workspace.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#life-coaching-img {
+  background-image: url("../manandvista.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .home-coaching-info {
-  font-family: 'Cormorant', serif;
-  color: $primary-color;
+  font-family: $serif-font;
+  color: $secondary-color;
   font-size: 1rem;
   padding: 1rem;
   padding-left: 2rem;
@@ -73,4 +89,24 @@
 .home-coaching-info li {
   padding-bottom: .2rem;
   list-style: disc;
+}
+
+@media (max-width: 768px) {
+  .home-action-banner-logo {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .home-coaching-info-types {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-coaching-info-box {
+    width: 80%;
+  }
+  #life-coaching-img {
+    background-position: center bottom;
+    height: 70vh;
+  }
 }
