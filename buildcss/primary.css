@@ -431,9 +431,81 @@ footer {
   .career-left {
     width: 100%; } }
 
+.life-container {
+  top: 132px;
+  display: block; }
+
+.life-top {
+  width: 100%;
+  background: url("../annie-spratt-253799.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - 132px); }
+
+.life-bottom {
+  display: flex;
+  flex-direction: row;
+  padding: 20px; }
+
+.life-left {
+  width: calc(100% - 300px); }
+
+.life-title {
+  width: 100%;
+  font-family: "Cormorant", serif;
+  font-size: 2rem;
+  color: #f72c47;
+  text-align: center;
+  padding: 1.5rem; }
+
+.life-about-title {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 1.4rem;
+  color: #021d3f; }
+
+.life-about-alert {
+  color: #38cafa;
+  font-size: 1.2rem;
+  padding: 1rem 0; }
+
+.life-section {
+  padding: 1rem;
+  font-family: "Cormorant", serif; }
+
+.life-about-list-title {
+  color: #f72c47;
+  font-weight: bold;
+  padding: .5rem; }
+
+.life-about-info {
+  padding: 1rem; }
+
+.life-about-info li {
+  margin-left: 2.5rem;
+  list-style: disc; }
+  .life-about-info li a {
+    color: #0584ad;
+    cursor: pointer; }
+
+.life-section p {
+  padding: .5rem; }
+
+.life-right {
+  width: 300px;
+  border-left: 1px solid #021d3f;
+  padding: 10px;
+  position: relative; }
+
+@media (max-width: 768px) {
+  .life-right {
+    display: none; }
+  .life-left {
+    width: 100%; } }
+
 .quote {
   position: absolute;
-  top: 10%; }
+  top: 20%; }
 
 .quote-mark {
   font-size: 50px; }
