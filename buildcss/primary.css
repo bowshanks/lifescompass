@@ -61,6 +61,11 @@ img {
   max-width: 100%;
   max-height: 100%; }
 
+.line {
+  width: 90%;
+  border-bottom: 1px solid black;
+  margin: auto; }
+
 .main-container {
   width: 100%; }
 
@@ -240,10 +245,12 @@ footer {
 
 .home-coaching-info-box-title {
   font-family: "Cormorant", serif;
-  color: #021d3f;
   font-size: 1.5rem;
   text-align: center;
   padding: 1rem; }
+  .home-coaching-info-box-title a {
+    text-decoration: none;
+    color: #021d3f; }
 
 .home-coaching-info-image {
   height: 45vh; }
@@ -380,9 +387,37 @@ footer {
   text-align: center;
   padding: 1.5rem; }
 
+.career-about-title {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 1.4rem;
+  color: #021d3f; }
+
+.career-about-alert {
+  color: #38cafa;
+  font-size: 1.2rem;
+  padding: 1rem 0; }
+
 .career-section {
   padding: 1rem;
   font-family: "Cormorant", serif; }
+
+.career-about-list-title {
+  color: #f72c47;
+  font-weight: bold;
+  padding: .5rem; }
+
+.career-about-info {
+  padding: 1rem; }
+
+.career-about-info li {
+  margin-left: 2.5rem;
+  list-style: disc; }
+  .career-about-info li a {
+    color: #0584ad;
+    cursor: pointer; }
+
+.career-section p {
+  padding: .5rem; }
 
 .career-right {
   width: 300px;
