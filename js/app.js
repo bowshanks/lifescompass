@@ -40,4 +40,19 @@ lifescompass.config(function($stateProvider,$urlRouterProvider,$httpProvider){
       templateUrl: './views/resources.html',
       controller: 'resourcesCtrl'
     })
+    .state('michele',{
+      url: '/michele',
+      templateUrl: './views/michele.html',
+      controller: 'micheleCtrl'
+    })
+    .state('success',{
+      url: '/success',
+      templateUrl: './views/success.html',
+      controller: 'successCtrl'
+    })
+    .state('testimonies',{
+      url: '/testimonies',
+      templateUrl: './views/testimonies.html',
+      controller: 'testimoniesCtrl'
+    })
 });

@@ -189,7 +189,7 @@ footer {
   width: 100%;
   height: calc(100vh);
   z-index: 1;
-  background-color: rgba(92, 211, 251, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   position: absolute; }
 
 .home-action-banner {
@@ -437,7 +437,7 @@ footer {
 
 .life-top {
   width: 100%;
-  background: url("../annie-spratt-253799.jpg") no-repeat center center fixed;
+  background: url("../sonja-guina-39897.jpg") no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
   position: relative;
@@ -503,6 +503,59 @@ footer {
   .life-left {
     width: 100%; } }
 
+.michele-container {
+  top: 132px;
+  display: block; }
+
+.michele-top {
+  width: 100%;
+  background: url("../alex-wigan-16997.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - 132px); }
+
+.michele-bottom {
+  display: flex;
+  flex-direction: row;
+  padding: 20px; }
+
+.michele-left {
+  width: calc(100% - 300px); }
+
+.michele-title {
+  width: 100%;
+  font-family: "Cormorant", serif;
+  font-size: 2rem;
+  color: #f72c47;
+  text-align: center;
+  padding: 1.5rem; }
+
+.michele-about {
+  padding: 0 1rem;
+  font-family: "Cormorant", serif; }
+  .michele-about p {
+    padding: .2rem 0; }
+    .michele-about p span {
+      color: #0597c6; }
+
+.michele-section-header {
+  font-family: "Fira Sans Condensed", sans-serif;
+  color: #f72c47;
+  padding: 1rem 0; }
+
+.michele-right {
+  width: 300px;
+  border-left: 1px solid #021d3f;
+  padding: 10px;
+  position: relative; }
+
+@media (max-width: 768px) {
+  .michele-right {
+    display: none; }
+  .michele-left {
+    width: 100%; } }
+
 .quote {
   position: absolute;
   top: 20%; }
@@ -528,3 +581,32 @@ footer {
   text-align: center;
   margin-top: 30px;
   font-family: "Cormorant", serif; }
+
+.mini-menu-link-holder ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.mini-menu-link-holder ul li {
+  position: relative;
+  float: left;
+  cursor: pointer;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 100; }
+
+.mini-menu-link-holder ul li a {
+  color: #021d3f;
+  text-decoration: none;
+  display: block; }
+
+.mini-menu-link-holder ul li:hover {
+  top: 1px;
+  left: 1px; }
+
+.mini-menu-link-holder ul a:hover {
+  color: #f72c47; }

@@ -1,0 +1,33 @@
+.mini-menu-link-holder ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.mini-menu-link-holder ul li {
+  position: relative;
+  float: left;
+  cursor: pointer;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.mini-menu-link-holder ul li a {
+  color: $secondary-color;
+  text-decoration: none;
+  display: block;
+}
+
+.mini-menu-link-holder ul li:hover {
+  top: 1px;
+  left: 1px;
+}
+
+.mini-menu-link-holder ul a:hover {
+  color: $red-color;
+}
