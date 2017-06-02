@@ -2,6 +2,7 @@ header {
   width: 100%;
   position: fixed;
   z-index: 3;
+  border-bottom: 1px solid black;
 }
 
 .header-top {
@@ -44,6 +45,9 @@ header {
 }
 
 @media (min-width: 769px) {
+  header {
+    border-bottom: none;
+  }
   .header-mobile-menu{
     height: 32px;
     display: none;

@@ -31,23 +31,47 @@
   padding: 1.5rem;
 }
 
-.michele-about {
-  padding: 0 1rem;
-  font-family: $serif-font;
-
-  p {
-    padding: .2rem 0;
-
-    span {
-      color: darken($primary-color, 45%);
-    }
-  }
-}
-
 .michele-section-header {
   font-family: $sans-serif-font;
   color: $red-color;
   padding: 1rem 0;
+}
+
+.michele-about {
+  padding: 0 2rem;
+  font-family: $serif-font;
+
+  p {
+    padding: .2rem 0;
+    margin-bottom: 10px;
+
+    span {
+      color: darken($primary-color, 25%);
+    }
+  }
+}
+
+.michele-crossroads-title {
+  font-family: $sans-serif-font;
+  font-size: 1.4rem;
+  color: #021d3f;
+}
+
+.michele-email-link {
+  font-family: $sans-serif-font;
+  font-weight: 300;
+  a {
+
+  }
+}
+
+.michele-phone-link {
+  font-family: $sans-serif-font;
+  font-weight: 300;
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .michele-right {
