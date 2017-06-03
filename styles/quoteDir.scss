@@ -1,6 +1,11 @@
 .quote {
+  height: 100%;
+  position: relative;
+}
+
+.quote-holder {
   position: absolute;
-  top: 20%;
+  top: 100px;
 }
 
 .quote-mark {

@@ -636,8 +636,12 @@ footer {
     width: 100%; } }
 
 .quote {
+  height: 100%;
+  position: relative; }
+
+.quote-holder {
   position: absolute;
-  top: 20%; }
+  top: 100px; }
 
 .quote-mark {
   font-size: 50px; }
