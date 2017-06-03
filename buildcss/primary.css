@@ -162,6 +162,9 @@ header {
     color: #fffdf6;
     letter-spacing: .1rem;
     padding: .7rem; }
+    .desktop-menu-contact a {
+      text-decoration: none;
+      color: #fffdf6; }
   .desktop-menu-contact:hover {
     background: #f72c47; } }
 

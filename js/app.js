@@ -55,4 +55,9 @@ lifescompass.config(function($stateProvider,$urlRouterProvider,$httpProvider){
       templateUrl: './views/testimonies.html',
       controller: 'testimoniesCtrl'
     })
+    .state('contact',{
+      url: '/contact',
+      templateUrl: './views/contact.html',
+      controller: 'contactCtrl'
+    })
 });

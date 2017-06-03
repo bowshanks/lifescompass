@@ -112,6 +112,11 @@ header {
     color: $white-text;
     letter-spacing: .1rem;
     padding: .7rem;
+
+    a {
+      text-decoration: none;
+      color: $white-text;
+    }
   }
   .desktop-menu-contact:hover {
     background: rgba($red-color, 1);
