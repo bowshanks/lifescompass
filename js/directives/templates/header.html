@@ -1,11 +1,11 @@
-<header ng-style="{'background-color':bgCol}">
-  <div class="header-top">
+<header>
+  <div class="header-top animate-show-hide" ng-show="headerDisplay">
 
-    <div class="header-logo">
-      <a href="#"><img src="./lifes compass wordmark-01.png" alt="logo"></a>
+    <div class="header-logo animate-show-hide">
+      <a href="#" ng-show="headerDisplay"><img src="./lifes compass wordmark-01.png" alt="logo"></a>
     </div>
 
-    <div class="desktop-menu-item desktop-menu-contact">
+    <div class="desktop-menu-item desktop-menu-contact animate-show-hide" ng-show="headerDisplay">
       <a ui-sref="contact">Contact</a>
     </div>
 

@@ -76,12 +76,23 @@ header {
   border-bottom: 1px solid black; }
 
 .header-top {
+  background: white;
   height: 100px;
   padding: 0 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
+
+.animate-show-hide.ng-hide {
+  height: 0; }
+
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-remove {
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s; }
 
 .header-logo {
   height: 140px;
