@@ -2,7 +2,7 @@ header {
   width: 100%;
   position: fixed;
   z-index: 3;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid darken($primary-color, 45%);
 }
 
 .header-top {
