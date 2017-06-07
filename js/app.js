@@ -50,10 +50,10 @@ lifescompass.config(function($stateProvider,$urlRouterProvider,$httpProvider){
       templateUrl: './views/success.html',
       controller: 'successCtrl'
     })
-    .state('testimonies',{
-      url: '/testimonies',
-      templateUrl: './views/testimonies.html',
-      controller: 'testimoniesCtrl'
+    .state('testimonials',{
+      url: '/testimonials',
+      templateUrl: './views/testimonials.html',
+      controller: 'testimonialsCtrl'
     })
     .state('contact',{
       url: '/contact',

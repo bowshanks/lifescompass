@@ -649,6 +649,80 @@ footer {
   .success-left {
     width: 100%; } }
 
+.testimonial-container {
+  top: 132px;
+  display: block; }
+
+.testimonial-top {
+  width: 100%;
+  background: url("../cristina-cerda-43101.jpg") no-repeat center bottom;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - 132px); }
+
+.testimonial-bottom {
+  display: flex;
+  flex-direction: row;
+  padding: 20px; }
+
+.testimonial-left {
+  width: calc(100% - 300px);
+  font-family: "Cormorant", serif; }
+
+.testimonial-title {
+  width: 100%;
+  font-family: "Cormorant", serif;
+  font-size: 2rem;
+  color: #f72c47;
+  text-align: center;
+  padding: 1.5rem; }
+
+.testimonial h2 {
+  font-size: 1.2rem;
+  padding: 1rem .5rem;
+  text-align: justify; }
+
+.testimonial p {
+  padding: 0 2rem; }
+
+.testimonial div {
+  padding: 0 1rem;
+  text-align: right; }
+
+.testimonial-oneonone h2 {
+  margin-top: 2rem;
+  color: #f72c47;
+  font-size: 1.2rem; }
+
+.testimonial-oneonone p {
+  padding: 1rem 2rem; }
+
+.testimonial-oneonone div {
+  width: 33%;
+  float: right;
+  padding: .5rem;
+  text-align: justify;
+  font-size: 1.2rem;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black; }
+
+.testimonial-right {
+  width: 300px;
+  border-left: 1px solid #021d3f;
+  padding: 10px;
+  position: relative; }
+
+@media (max-width: 768px) {
+  .testimonial-top {
+    display: none; }
+  .testimonial-bottom {
+    min-height: calc(100vh - 45px); }
+  .testimonial-right {
+    display: none; }
+  .testimonial-left {
+    width: 100%; } }
+
 .contact-container {
   top: 132px;
   display: block;
@@ -661,8 +735,16 @@ footer {
 
 .contact-text {
   padding: 1rem 2rem; }
+  .contact-text h1 {
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #f72c47;
+    font-size: 2rem;
+    text-align: left; }
   .contact-text p {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    font-family: "Cormorant", serif; }
+  .contact-text a {
+    color: #f72c47; }
 
 .contact-form-holder {
   width: 100%;
@@ -678,7 +760,7 @@ footer {
       font-weight: 300;
       font-family: "Fira Sans Condensed", sans-serif; }
     .contact-form-holder form .contact-form-line input {
-      width: 100%; }
+      width: 280px; }
 
 .submit {
   background-color: #f72c47;
