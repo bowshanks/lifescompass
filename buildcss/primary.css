@@ -202,113 +202,145 @@ footer {
   width: 1.5rem;
   font-weight: 500; }
 
-.home-action-banner-overlay {
-  width: 100%;
-  height: calc(100vh);
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.1);
-  position: absolute; }
+.home-container {
+  /* TEMP */
+  padding: 5px; }
 
-.home-action-banner {
+.home-dead-space {
   width: 100%;
-  height: calc(100vh);
-  background: url("../forest-light.jpg") no-repeat center center fixed;
-  background-size: cover;
-  background-size: cover;
+  height: 135px; }
+
+.home-banner {
+  height: calc(100vh - 135px);
+  width: 100%;
+  /* TEMP */
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  font-family: "Cormorant", serif;
+  font-size: 10rem; }
+
+.home-body-title {
+  width: 100%;
+  padding: 10px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 2rem;
+  text-align: center; }
+
+.home-coaching-type-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0; }
+
+.home-coaching-type {
+  /* TEMP */
+  width: 300px;
+  border: 1px solid black;
+  padding: 5px; }
+
+.home-coaching-type-title {
+  width: 100%;
+  text-align: center;
+  font-family: "Cormorant", serif;
+  font-size: 1.5rem; }
+
+.home-coaching-type-img {
+  /* TEMP */
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Cormorant", serif; }
+
+.home-coaching-type-text {
+  padding: 5px; }
+
+.home-section-break {
+  width: 100%;
+  height: 125px;
+  background: #1f2e2f;
+  position: relative;
+  display: flex;
+  padding-left: 185px; }
+
+.home-section-break:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 115px;
+  background: #FFFFFF;
+  z-index: 1;
+  -webkit-transform: matrix(1.25, 0, 0.75, 1, 0, 0);
+  -moz-transform: matrix(1.25, 0, 0.75, 1, 0, 0);
+  -ms-transform: matrix(1.25, 0, 0.75, 1, 0, 0);
+  -o-transform: matrix(1.25, 0, 0.75, 1, 0, 0);
+  transform: matrix(1.25, 0, 0.75, 1, 0, 0);
+  border-radius: 0 20px 0 20px;
+  margin: 0 -80px 0;
+  left: 140px; }
+
+.home-section-break-left {
+  width: 150px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center; }
 
-.home-action-banner-logo {
-  color: #fffdf6;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: 200;
-  font-size: 4rem;
-  margin-bottom: 2rem;
-  z-index: 2; }
+.circle {
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  border-radius: 50%; }
 
-.home-action-banner-action {
-  color: #fffdf6;
+.home-section-break-right {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 100px; }
+
+.home-section-break-right-words {
+  padding: 10px;
+  color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: 200;
-  font-size: 2rem;
-  border: 2px;
-  border-style: solid;
-  border-color: #fffdf6;
-  padding: .7rem;
-  background-color: rgba(247, 44, 71, 0.8);
-  z-index: 2;
+  font-weight: 100;
+  font-size: 2.1rem; }
+
+.home-section-break-right-arrow {
+  height: 100px;
+  width: 50px;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 2.1rem;
+  position: relative;
   cursor: pointer; }
 
-.home-action-banner-action:hover {
-  background-color: #f72c47; }
+.home-section-break-right-arrow:hover {
+  left: 5px; }
 
-.home-coaching-info-title {
-  font-family: "Fira Sans Condensed", sans-serif;
-  color: #f72c47;
-  font-size: 2rem;
-  text-align: center;
-  padding: 2rem; }
-
-.home-coaching-info-types {
+.home-award-container {
   width: 100%;
+  padding: 20px;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-around; }
 
-.home-coaching-info-box {
-  width: 50%;
-  padding: 1rem; }
-
-.home-coaching-info-box-title {
-  font-family: "Cormorant", serif;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 1rem; }
-  .home-coaching-info-box-title a {
-    text-decoration: none;
-    color: #021d3f; }
-
-.home-coaching-info-image {
-  height: 45vh; }
-
-#career-coaching-img {
-  background-image: url("../workspace.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-#life-coaching-img {
-  background-image: url("../manandvista.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.home-coaching-info {
-  font-family: "Cormorant", serif;
-  color: #021d3f;
-  font-size: 1rem;
-  padding: 1rem;
-  padding-left: 2rem; }
-
-.home-coaching-info li {
-  padding-bottom: .2rem;
-  list-style: disc; }
-
-@media (max-width: 768px) {
-  .home-action-banner-logo {
-    font-size: 3rem;
-    text-align: center; }
-  .home-coaching-info-types {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .home-coaching-info-box {
-    width: 80%; }
-  #life-coaching-img {
-    background-position: center bottom;
-    height: 70vh; } }
+.home-award-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 2.1rem; }
 
 .benefits-container {
   top: 132px;
