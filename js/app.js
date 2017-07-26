@@ -20,6 +20,11 @@ lifescompass.config(function($stateProvider,$urlRouterProvider,$httpProvider){
       templateUrl: './views/career.html',
       controller: 'careerCtrl'
     })
+    .state('executive',{
+      url: '/executive',
+      templateUrl: './views/executive.html',
+      controller: 'executiveCtrl'
+    })
     .state('divorce',{
       url: '/divorce',
       templateUrl: './views/divorce.html',
