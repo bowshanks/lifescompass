@@ -14,7 +14,7 @@ angular.module('lifescompass').directive('quoteDir', function($window) {
       var handler = function() {
         scope.scroll = $window.pageYOffset;
         transparancy = (scope.scroll/scope.height) + 0.7;
-        scope.slowScroll = 'translate(0px,'+ scope.scroll /10 +'%)';
+        scope.slowScroll = 'translate(0px,'+ scope.scroll /5 +'%)';
       }
       windowEl.on('scroll', scope.$apply.bind(scope, handler));
       handler();
