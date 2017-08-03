@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Cormorant:300,400");
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,200,300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600");
 @import url("https://fonts.googleapis.com/css?family=Homemade+Apple");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -158,9 +158,9 @@ header {
     float: left;
     padding: .5em;
     cursor: pointer;
-    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 1rem;
-    font-weight: 100; }
+    font-weight: 200; }
   .header-desktop-menu ul a {
     color: #fffdf6;
     text-decoration: none;
@@ -176,8 +176,8 @@ header {
     border: 1px;
     border-style: solid;
     border-color: #fffdf6;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-weight: 200;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
     font-size: 1.2rem;
     color: #fffdf6;
     letter-spacing: .1rem;
@@ -202,9 +202,9 @@ footer {
   width: 100%;
   text-align: center;
   color: #fffdf6;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
-  font-weight: 200; }
+  font-weight: 300; }
 
 .bullet-spacer {
   display: inline-block;
@@ -234,7 +234,7 @@ footer {
 .home-body-title {
   width: 100%;
   padding: 10px;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 2rem;
   text-align: center; }
 
@@ -286,8 +286,11 @@ footer {
   position: absolute;
   height: 100%;
   width: 115px;
-  background: #FFFFFF;
-  z-index: 1;
+  background-image: url(../body.png);
+  background-repeat: repeat;
+  background-position: top center;
+  background-attachment: scroll;
+  z-index: 0;
   -webkit-transform: matrix(1.25, 0, 0.75, 1, 0, 0);
   -moz-transform: matrix(1.25, 0, 0.75, 1, 0, 0);
   -ms-transform: matrix(1.25, 0, 0.75, 1, 0, 0);
@@ -323,7 +326,7 @@ footer {
 .home-section-break-right-words {
   padding: 10px;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 100;
   font-size: 2.1rem; }
 
@@ -331,7 +334,7 @@ footer {
   height: 100px;
   width: 50px;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 2.1rem;
   position: relative;
   cursor: pointer; }
@@ -350,7 +353,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 2.1rem; }
 
 .benefits-container {
@@ -386,7 +389,7 @@ footer {
   font-family: "Cormorant", serif; }
 
 .coaching-title {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: #021d3f;
   font-size: 2rem;
   padding-bottom: 1rem; }
@@ -448,7 +451,7 @@ footer {
   padding: 1.5rem; }
 
 .career-about-title {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.4rem;
   color: #021d3f; }
 
@@ -501,7 +504,11 @@ footer {
   background-size: cover;
   background-size: cover;
   position: relative;
-  height: calc(100vh); }
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .executive-bottom {
   display: flex;
@@ -512,15 +519,15 @@ footer {
   width: calc(100% - 300px); }
 
 .executive-title {
-  width: 100%;
   font-family: "Cormorant", serif;
-  font-size: 2rem;
-  color: black;
+  font-size: 3rem;
+  color: white;
   text-align: center;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  letter-spacing: 1rem; }
 
 .executive-about-title {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.4rem;
   color: #021d3f; }
 
@@ -592,7 +599,7 @@ footer {
   padding: 1.5rem; }
 
 .life-about-title {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.4rem;
   color: #021d3f; }
 
@@ -664,7 +671,7 @@ footer {
   padding: 1.5rem; }
 
 .michele-section-header {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: black;
   padding: 1rem 0; }
 
@@ -678,16 +685,16 @@ footer {
       color: #38cafa; }
 
 .michele-crossroads-title {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.4rem;
   color: #021d3f; }
 
 .michele-email-link {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 300; }
 
 .michele-phone-link {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 300; }
   .michele-phone-link a {
     text-decoration: none;
@@ -734,20 +741,20 @@ footer {
   padding: 1.5rem; }
 
 .success-section-header {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: black;
   padding: 1rem 0; }
 
 .success-story {
   padding: 1rem 2rem; }
   .success-story span {
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     color: black; }
   .success-story p {
     margin-bottom: 1rem; }
 
 .success-story-title {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.4rem;
   color: #021d3f;
   margin-bottom: .4rem; }
@@ -851,7 +858,7 @@ footer {
 .contact-text {
   padding: 1rem 2rem; }
   .contact-text h1 {
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     color: black;
     font-size: 2rem;
     text-align: left; }
@@ -873,7 +880,7 @@ footer {
       padding: .5rem;
       color: #fff;
       font-weight: 300;
-      font-family: "Fira Sans Condensed", sans-serif; }
+      font-family: "Nunito Sans", sans-serif; }
     .contact-form-holder form .contact-form-line input {
       width: 280px; }
 
@@ -932,9 +939,9 @@ footer {
   position: relative;
   float: left;
   cursor: pointer;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
-  font-weight: 100; }
+  font-weight: 200; }
 
 .mini-menu-link-holder ul li a {
   color: #021d3f;

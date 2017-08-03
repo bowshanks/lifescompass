@@ -10,6 +10,10 @@
   background-size: cover;
   position: relative;
   height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .executive-bottom {
@@ -23,12 +27,12 @@
 }
 
 .executive-title {
-  width: 100%;
   font-family: $serif-font;
-  font-size: 2rem;
-  color: $red-color;
+  font-size: 3rem;
+  color: white;
   text-align: center;
   padding: 1.5rem;
+  letter-spacing: 1rem;
 }
 
 .executive-about-title {

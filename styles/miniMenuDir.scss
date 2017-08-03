@@ -12,9 +12,9 @@
   position: relative;
   float: left;
   cursor: pointer;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: $sans-serif-font;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .mini-menu-link-holder ul li a {
