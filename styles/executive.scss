@@ -10,7 +10,6 @@
   background-size: cover;
   position: relative;
   height: calc(100vh);
-  z-index: 7;
 }
 
 .executive-bottom {
@@ -20,14 +19,7 @@
 }
 
 .executive-left {
-  width: 200px;
-  border-right: 1px solid $secondary-color;
-  padding: 10px;
-  position: relative;
-}
-
-.executive-right {
-  width: calc(100% - 200px);
+  width: calc(100% - 300px);
 }
 
 .executive-title {
@@ -78,6 +70,13 @@
 
 .executive-section p {
   padding: .5rem;
+}
+
+.executive-right {
+  width: 300px;
+  border-left: 1px solid $secondary-color;
+  padding: 10px;
+  position: relative;
 }
 
 @media (max-width: 768px) {

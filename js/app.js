@@ -66,3 +66,9 @@ lifescompass.config(function($stateProvider,$urlRouterProvider,$httpProvider){
       controller: 'contactCtrl'
     })
 });
+
+lifescompass.run(function($rootScope, $state) {
+  $rootScope.$on("$stateChangeSuccess", function (event, currentRoute, previousRoute) {
+      window.scrollTo(0, 0);
+  });
+});
