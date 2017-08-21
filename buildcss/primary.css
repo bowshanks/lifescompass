@@ -107,12 +107,23 @@ header {
   height: 140px;
   width: auto;
   position: relative;
-  top: 10px; }
+  top: 10px;
+  display: flex;
+  flex-direction: row; }
 
 .header-logo img {
-  display: block;
   max-height: 100%;
   margin: auto; }
+
+.header-logo div {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-family: "Cormorant", serif;
+  font-size: 50px; }
+  .header-logo div a {
+    color: #7a0000;
+    text-decoration: none; }
 
 .header-align {
   width: 100%;
@@ -178,6 +189,9 @@ header {
   .header-desktop-menu ul li:hover > a {
     background: white;
     color: black; }
+  .header-desktop-menu ul li a:hover {
+    background: #A2A3A1;
+    color: #fffdf6; }
   .header-desktop-menu ul li:hover .header-drop-down {
     display: block; }
   .header-drop-down {
@@ -188,7 +202,7 @@ header {
   .header-drop-down > a {
     color: black; }
   .header-drop-down a:hover {
-    background: grey;
+    background: #A2A3A1;
     color: #fffdf6; }
   .desktop-menu-contact {
     display: block;
@@ -516,6 +530,158 @@ footer {
   .career-right {
     display: none; }
   .career-left {
+    width: 100%; } }
+
+.career-student-container {
+  top: 132px;
+  display: block; }
+
+.career-student-top {
+  width: 100%;
+  background: url("../hugo-sousa-270201.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.career-student-bottom {
+  display: flex;
+  flex-direction: row;
+  padding: 20px; }
+
+.career-student-left {
+  width: calc(100% - 300px); }
+
+.career-student-title {
+  font-family: "Cormorant", serif;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  letter-spacing: 1rem; }
+
+.career-student-about-title {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.4rem;
+  color: #021d3f; }
+
+.career-student-about-alert {
+  color: #38cafa;
+  font-size: 1.2rem;
+  padding: 1rem 0; }
+
+.career-student-section {
+  padding: 1rem;
+  font-family: "Cormorant", serif; }
+
+.career-student-about-list-title {
+  color: black;
+  font-weight: bold;
+  padding: .5rem; }
+
+.career-student-about-info {
+  padding: 1rem; }
+
+.career-student-about-info li {
+  margin-left: 2.5rem;
+  list-style: disc; }
+  .career-student-about-info li a {
+    color: #0584ad;
+    cursor: pointer; }
+
+.career-student-section p {
+  padding: .5rem; }
+
+.career-student-right {
+  width: 300px;
+  border-left: 1px solid #021d3f;
+  padding: 10px;
+  position: relative; }
+
+@media (max-width: 768px) {
+  .career-student-right {
+    display: none; }
+  .career-student-left {
+    width: 100%; } }
+
+.career-mid-container {
+  top: 132px;
+  display: block; }
+
+.career-mid-top {
+  width: 100%;
+  background: url("../hugo-sousa-270201.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.career-mid-bottom {
+  display: flex;
+  flex-direction: row;
+  padding: 20px; }
+
+.career-mid-left {
+  width: calc(100% - 300px); }
+
+.career-mid-title {
+  font-family: "Cormorant", serif;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  letter-spacing: 1rem; }
+
+.career-mid-about-title {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.4rem;
+  color: #021d3f; }
+
+.career-mid-about-alert {
+  color: #38cafa;
+  font-size: 1.2rem;
+  padding: 1rem 0; }
+
+.career-mid-section {
+  padding: 1rem;
+  font-family: "Cormorant", serif; }
+
+.career-mid-about-list-title {
+  color: black;
+  font-weight: bold;
+  padding: .5rem; }
+
+.career-mid-about-info {
+  padding: 1rem; }
+
+.career-mid-about-info li {
+  margin-left: 2.5rem;
+  list-style: disc; }
+  .career-mid-about-info li a {
+    color: #0584ad;
+    cursor: pointer; }
+
+.career-mid-section p {
+  padding: .5rem; }
+
+.career-mid-right {
+  width: 300px;
+  border-left: 1px solid #021d3f;
+  padding: 10px;
+  position: relative; }
+
+@media (max-width: 768px) {
+  .career-mid-right {
+    display: none; }
+  .career-mid-left {
     width: 100%; } }
 
 .executive-container {

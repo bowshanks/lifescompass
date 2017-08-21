@@ -1,0 +1,93 @@
+.career-student-container {
+  top: 132px;
+  display: block;
+}
+
+.career-student-top {
+  width: 100%;
+  background: url("../hugo-sousa-270201.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.career-student-bottom {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.career-student-left {
+  width: calc(100% - 300px);
+}
+
+.career-student-title {
+  font-family: $serif-font;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  letter-spacing: 1rem;
+}
+
+.career-student-about-title {
+  font-family: $sans-serif-font;
+  font-size: 1.4rem;
+  color: $secondary-color;
+}
+
+.career-student-about-alert {
+  color: darken($primary-color, 25%);
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.career-student-section {
+  padding: 1rem;
+  font-family: $serif-font;
+}
+
+.career-student-about-list-title {
+  color: $red-color;
+  font-weight: bold;
+  padding: .5rem;
+}
+
+.career-student-about-info {
+  padding: 1rem;
+}
+
+.career-student-about-info li {
+  margin-left: 2.5rem;
+  list-style: disc;
+
+  a {
+    color: darken($primary-color, 50%);
+    cursor: pointer;
+  }
+}
+
+.career-student-section p {
+  padding: .5rem;
+}
+
+.career-student-right {
+  width: 300px;
+  border-left: 1px solid $secondary-color;
+  padding: 10px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .career-student-right {
+    display: none;
+  }
+  .career-student-left {
+    width: 100%;
+  }
+}

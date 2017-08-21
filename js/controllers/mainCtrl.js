@@ -1,3 +1,5 @@
-angular.module('lifescompass').controller('mainCtrl',function($scope,$window){
-
+angular.module('lifescompass').controller('mainCtrl',function($scope, $location){
+  $scope.scrollTo = function (anchor) {
+    $location.hash(anchor);
+  }
 });

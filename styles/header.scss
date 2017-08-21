@@ -34,11 +34,25 @@ header {
   width: auto;
   position: relative;
   top: 10px;
+  display: flex;
+  flex-direction: row;
 }
 .header-logo img {
-  display: block;
   max-height: 100%;
   margin: auto;
+}
+.header-logo div {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-family: $serif-font;
+  font-size: 50px;
+
+  a {
+    color: rgb(122, 0, 0);
+    //color: rgb(88, 19, 21);
+    text-decoration: none;
+  }
 }
 .header-align {
   width: 100%;
@@ -125,6 +139,11 @@ header {
     color: black;
   }
 
+  .header-desktop-menu ul li a:hover {
+    background: #A2A3A1;
+    color: $white-text;
+  }
+
   .header-desktop-menu ul li:hover .header-drop-down {
     display: block;
   }
@@ -141,7 +160,7 @@ header {
   }
 
   .header-drop-down a:hover {
-    background: grey;
+    background: #A2A3A1;
     color: $white-text;
   }
 
