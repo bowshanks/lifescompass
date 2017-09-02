@@ -110,18 +110,21 @@ header {
   top: 10px;
   display: flex;
   flex-direction: row; }
+  .header-logo a {
+    width: 100px; }
 
 .header-logo img {
   max-height: 100%;
   margin: auto; }
 
-.header-logo div {
+.header-logo-text {
   display: flex;
   align-items: center;
   padding: 0 20px;
   font-family: "Cormorant", serif;
   font-size: 50px; }
-  .header-logo div a {
+  .header-logo-text a {
+    width: auto;
     color: #7a0000;
     text-decoration: none; }
 
@@ -190,7 +193,7 @@ header {
     background: white;
     color: black; }
   .header-desktop-menu ul li a:hover {
-    background: #A2A3A1;
+    background: #ff2e2e;
     color: #fffdf6; }
   .header-desktop-menu ul li:hover .header-drop-down {
     display: block; }
@@ -202,7 +205,7 @@ header {
   .header-drop-down > a {
     color: black; }
   .header-drop-down a:hover {
-    background: #A2A3A1;
+    background-color: #ff2e2e;
     color: #fffdf6; }
   .desktop-menu-contact {
     display: block;
@@ -220,7 +223,7 @@ header {
       text-decoration: none;
       color: #fffdf6; }
   .desktop-menu-contact:hover {
-    background: black; } }
+    background: #7a0000; } }
 
 footer {
   width: 100%;
@@ -309,7 +312,7 @@ footer {
 .home-section-break {
   width: 100%;
   height: 125px;
-  background: #1f2e2f;
+  background: #515151;
   position: relative;
   display: flex;
   padding-left: 185px; }
@@ -414,7 +417,7 @@ footer {
   width: 100%;
   font-family: "Cormorant", serif;
   font-size: 2rem;
-  color: black;
+  color: #7a0000;
   text-align: center;
   padding: 1.5rem; }
 
@@ -434,7 +437,7 @@ footer {
   font-family: "Cormorant", serif; }
 
 .coaching-info div {
-  color: black;
+  color: #7a0000;
   font-size: 1.2rem; }
 
 .coaching-info ul {
@@ -503,7 +506,7 @@ footer {
   font-family: "Cormorant", serif; }
 
 .career-about-list-title {
-  color: black;
+  color: #7a0000;
   font-weight: bold;
   padding: .5rem; }
 
@@ -579,7 +582,7 @@ footer {
   font-family: "Cormorant", serif; }
 
 .career-student-about-list-title {
-  color: black;
+  color: #7a0000;
   font-weight: bold;
   padding: .5rem; }
 
@@ -655,7 +658,7 @@ footer {
   font-family: "Cormorant", serif; }
 
 .career-mid-about-list-title {
-  color: black;
+  color: #7a0000;
   font-weight: bold;
   padding: .5rem; }
 
@@ -731,7 +734,7 @@ footer {
   font-family: "Cormorant", serif; }
 
 .executive-about-list-title {
-  color: black;
+  color: #7a0000;
   font-weight: bold;
   padding: .5rem; }
 
@@ -784,7 +787,7 @@ footer {
   width: 100%;
   font-family: "Cormorant", serif;
   font-size: 2rem;
-  color: black;
+  color: #7a0000;
   text-align: center;
   padding: 1.5rem; }
 
@@ -803,7 +806,7 @@ footer {
   font-family: "Cormorant", serif; }
 
 .life-about-list-title {
-  color: black;
+  color: #7a0000;
   font-weight: bold;
   padding: .5rem; }
 
@@ -856,13 +859,13 @@ footer {
   width: 100%;
   font-family: "Cormorant", serif;
   font-size: 2rem;
-  color: black;
+  color: #7a0000;
   text-align: center;
   padding: 1.5rem; }
 
 .michele-section-header {
   font-family: "Nunito Sans", sans-serif;
-  color: black;
+  color: #7a0000;
   padding: 1rem 0; }
 
 .michele-about {
@@ -926,20 +929,20 @@ footer {
   width: 100%;
   font-family: "Cormorant", serif;
   font-size: 2rem;
-  color: black;
+  color: #7a0000;
   text-align: center;
   padding: 1.5rem; }
 
 .success-section-header {
   font-family: "Nunito Sans", sans-serif;
-  color: black;
+  color: #7a0000;
   padding: 1rem 0; }
 
 .success-story {
   padding: 1rem 2rem; }
   .success-story span {
     font-family: "Nunito Sans", sans-serif;
-    color: black; }
+    color: #7a0000; }
   .success-story p {
     margin-bottom: 1rem; }
 
@@ -985,7 +988,7 @@ footer {
   width: 100%;
   font-family: "Cormorant", serif;
   font-size: 2rem;
-  color: black;
+  color: #7a0000;
   text-align: center;
   padding: 1.5rem; }
 
@@ -1003,7 +1006,7 @@ footer {
 
 .testimonial-oneonone h2 {
   margin-top: 2rem;
-  color: black;
+  color: #7a0000;
   font-size: 1.2rem; }
 
 .testimonial-oneonone p {
@@ -1049,14 +1052,14 @@ footer {
   padding: 1rem 2rem; }
   .contact-text h1 {
     font-family: "Nunito Sans", sans-serif;
-    color: black;
+    color: #7a0000;
     font-size: 2rem;
     text-align: left; }
   .contact-text p {
     margin-bottom: 1rem;
     font-family: "Cormorant", serif; }
   .contact-text a {
-    color: black; }
+    color: #ff2e2e; }
 
 .contact-form-holder {
   width: 100%;
@@ -1064,7 +1067,7 @@ footer {
   flex-direction: column;
   align-items: center; }
   .contact-form-holder form {
-    background-color: #0597c6;
+    background-color: #2e88f8;
     padding: 1rem; }
     .contact-form-holder form .contact-form-line .contact-form-line-header {
       padding: .5rem;
@@ -1072,14 +1075,22 @@ footer {
       font-weight: 300;
       font-family: "Nunito Sans", sans-serif; }
     .contact-form-holder form .contact-form-line input {
-      width: 280px; }
+      width: 280px;
+      height: 24px;
+      font-size: 18px;
+      border: none; }
 
 .submit {
-  background-color: black;
-  border: none;
-  color: white;
+  background-color: white;
+  border: 1px solid #7a0000;
+  color: #7a0000;
   padding: .3rem .5rem;
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin-top: .7rem; }
+
+.submit:hover {
+  background-color: #ff2e2e;
+  color: white; }
 
 @media (max-width: 768px) {
   .contact-header-placeholder {
@@ -1143,4 +1154,4 @@ footer {
   left: 1px; }
 
 .mini-menu-link-holder ul a:hover {
-  color: black; }
+  color: #7a0000; }

@@ -24,7 +24,7 @@
   }
 
   a {
-    color: rgba($red-color, 1);
+    color: lighten($red-color, 35%);
   }
 }
 .contact-form-holder {
@@ -34,7 +34,7 @@
   align-items: center;
 
   form {
-    background-color: darken($primary-color, 45%);
+    background-color: lighten($secondary-color, 45%);
     padding: 1rem;
 
     .contact-form-line {
@@ -46,17 +46,26 @@
       }
       input {
         width: 280px;
+        height: 24px;
+        font-size: 18px;
+        border: none;
       }
     }
   }
 }
 
 .submit {
-  background-color: $red-color;
-  border: none;
-  color: white;
+  background-color: white;
+  border: 1px solid $red-color;
+  color: $red-color;
   padding: .3rem .5rem;
   font-size: 1rem;
+  margin-top: .7rem;
+}
+
+.submit:hover {
+  background-color: lighten($red-color, 35%);
+  color: white;
 }
 
 
