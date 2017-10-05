@@ -7,9 +7,21 @@
   width: 100%;
   background: url("../sonja-guina-39897.jpg") no-repeat center center fixed;
   background-size: cover;
-  background-size: cover;
   position: relative;
-  height: calc(100vh - 132px);
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.life-title {
+  font-family: $serif-font;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  letter-spacing: 1rem;
 }
 
 .life-bottom {
@@ -20,15 +32,6 @@
 
 .life-left {
   width: calc(100% - 300px);
-}
-
-.life-title {
-  width: 100%;
-  font-family: $serif-font;
-  font-size: 2rem;
-  color: $red-color;
-  text-align: center;
-  padding: 1.5rem;
 }
 
 .life-about-title {

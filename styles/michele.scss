@@ -7,9 +7,22 @@
   width: 100%;
   background: url("../alex-wigan-16997.jpg") no-repeat center center fixed;
   background-size: cover;
-  background-size: cover;
   position: relative;
-  height: calc(100vh - 132px);
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.michele-title {
+  font-family: $serif-font;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  letter-spacing: 1rem;
+  background: rgba(0,0,0,.5);
 }
 
 .michele-bottom {
@@ -20,15 +33,6 @@
 
 .michele-left {
   width: calc(100% - 300px);
-}
-
-.michele-title {
-  width: 100%;
-  font-family: $serif-font;
-  font-size: 2rem;
-  color: $red-color;
-  text-align: center;
-  padding: 1.5rem;
 }
 
 .michele-section-header {

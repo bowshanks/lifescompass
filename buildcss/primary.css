@@ -475,14 +475,6 @@ footer {
   justify-content: center;
   align-items: center; }
 
-.career-bottom {
-  display: flex;
-  flex-direction: row;
-  padding: 20px; }
-
-.career-left {
-  width: calc(100% - 300px); }
-
 .career-title {
   font-family: "Cormorant", serif;
   font-size: 3rem;
@@ -491,43 +483,77 @@ footer {
   padding: 1.5rem;
   letter-spacing: 1rem; }
 
+.career-bottom {
+  display: flex;
+  flex-direction: row;
+  padding: 20px; }
+
+.career-left {
+  width: calc(100% - 300px); }
+
+.career-intro {
+  padding: 1rem; }
+  .career-intro h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.4rem;
+    color: #021d3f;
+    margin-bottom: 10px; }
+
 .career-about-title {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.4rem;
   color: #021d3f; }
 
-.career-about-alert {
-  color: #38cafa;
-  font-size: 1.2rem;
-  padding: 1rem 0; }
+.career-coaching-type-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0; }
 
-.career-section {
-  padding: 1rem;
-  font-family: "Cormorant", serif; }
+.career-coaching-type {
+  width: 25%;
+  /* TEMP */
+  border: 1px solid black;
+  padding: 5px; }
 
-.career-about-list-title {
-  color: #7a0000;
-  font-weight: bold;
-  padding: .5rem; }
+.career-coaching-type-title {
+  width: 100%;
+  text-align: center;
+  font-family: "Cormorant", serif;
+  font-size: 1.5rem;
+  cursor: pointer; }
 
-.career-about-info {
-  padding: 1rem; }
+.career-coaching-type-img {
+  /* TEMP */
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Cormorant", serif;
+  cursor: pointer; }
 
-.career-about-info li {
-  margin-left: 2.5rem;
-  list-style: disc; }
-  .career-about-info li a {
-    color: #0584ad;
-    cursor: pointer; }
-
-.career-section p {
-  padding: .5rem; }
+.career-coaching-type-text {
+  padding: 5px; }
 
 .career-right {
   width: 300px;
   border-left: 1px solid #021d3f;
   padding: 10px;
   position: relative; }
+
+@media (max-width: 1200px) {
+  .career-coaching-type-container {
+    display: block; }
+  .career-coaching-type {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    /* TEMP */
+    border: 1px solid black;
+    padding: 5px; } }
 
 @media (max-width: 768px) {
   .career-right {
@@ -542,7 +568,6 @@ footer {
 .career-student-top {
   width: 100%;
   background: url("../hugo-sousa-270201.jpg") no-repeat center center fixed;
-  background-size: cover;
   background-size: cover;
   position: relative;
   height: calc(100vh);
@@ -619,7 +644,6 @@ footer {
   width: 100%;
   background: url("../hugo-sousa-270201.jpg") no-repeat center center fixed;
   background-size: cover;
-  background-size: cover;
   position: relative;
   height: calc(100vh);
   display: flex;
@@ -694,7 +718,6 @@ footer {
 .executive-top {
   width: 100%;
   background: url("../jason-wong-305496.jpg") no-repeat center center fixed;
-  background-size: cover;
   background-size: cover;
   position: relative;
   height: calc(100vh);
@@ -771,9 +794,20 @@ footer {
   width: 100%;
   background: url("../sonja-guina-39897.jpg") no-repeat center center fixed;
   background-size: cover;
-  background-size: cover;
   position: relative;
-  height: calc(100vh - 132px); }
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.life-title {
+  font-family: "Cormorant", serif;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  letter-spacing: 1rem; }
 
 .life-bottom {
   display: flex;
@@ -782,14 +816,6 @@ footer {
 
 .life-left {
   width: calc(100% - 300px); }
-
-.life-title {
-  width: 100%;
-  font-family: "Cormorant", serif;
-  font-size: 2rem;
-  color: #7a0000;
-  text-align: center;
-  padding: 1.5rem; }
 
 .life-about-title {
   font-family: "Nunito Sans", sans-serif;
@@ -843,9 +869,21 @@ footer {
   width: 100%;
   background: url("../alex-wigan-16997.jpg") no-repeat center center fixed;
   background-size: cover;
-  background-size: cover;
   position: relative;
-  height: calc(100vh - 132px); }
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.michele-title {
+  font-family: "Cormorant", serif;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  letter-spacing: 1rem;
+  background: rgba(0, 0, 0, 0.5); }
 
 .michele-bottom {
   display: flex;
@@ -854,14 +892,6 @@ footer {
 
 .michele-left {
   width: calc(100% - 300px); }
-
-.michele-title {
-  width: 100%;
-  font-family: "Cormorant", serif;
-  font-size: 2rem;
-  color: #7a0000;
-  text-align: center;
-  padding: 1.5rem; }
 
 .michele-section-header {
   font-family: "Nunito Sans", sans-serif;

@@ -16,6 +16,15 @@
   align-items: center;
 }
 
+.career-title {
+  font-family: $serif-font;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  letter-spacing: 1rem;
+}
+
 .career-bottom {
   display: flex;
   flex-direction: row;
@@ -26,13 +35,15 @@
   width: calc(100% - 300px);
 }
 
-.career-title {
-  font-family: $serif-font;
-  font-size: 3rem;
-  color: white;
-  text-align: center;
-  padding: 1.5rem;
-  letter-spacing: 1rem;
+.career-intro {
+  padding: 1rem;
+
+  h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.4rem;
+    color: $secondary-color;
+    margin-bottom: 10px;
+  }
 }
 
 .career-about-title {
@@ -41,39 +52,43 @@
   color: $secondary-color;
 }
 
-.career-about-alert {
-  color: darken($primary-color, 25%);
-  font-size: 1.2rem;
-  padding: 1rem 0;
+.career-coaching-type-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0;
 }
 
-.career-section {
-  padding: 1rem;
+.career-coaching-type {
+  width: 25%;
+  /* TEMP */
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.career-coaching-type-title {
+  width: 100%;
+  text-align: center;
   font-family: $serif-font;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.career-about-list-title {
-  color: $red-color;
-  font-weight: bold;
-  padding: .5rem;
+.career-coaching-type-img {
+  /* TEMP */
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: $serif-font;
+  cursor: pointer;
 }
 
-.career-about-info {
-  padding: 1rem;
-}
-
-.career-about-info li {
-  margin-left: 2.5rem;
-  list-style: disc;
-
-  a {
-    color: darken($primary-color, 50%);
-    cursor: pointer;
-  }
-}
-
-.career-section p {
-  padding: .5rem;
+.career-coaching-type-text {
+  padding: 5px;
 }
 
 .career-right {
@@ -81,6 +96,21 @@
   border-left: 1px solid $secondary-color;
   padding: 10px;
   position: relative;
+}
+
+@media (max-width: 1200px) {
+  .career-coaching-type-container {
+    display: block;
+  }
+
+  .career-coaching-type {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    /* TEMP */
+    border: 1px solid black;
+    padding: 5px;
+  }
 }
 
 @media (max-width: 768px) {
